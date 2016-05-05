@@ -11,9 +11,11 @@ cd ~/
 
 echo "atualiza sistema caso necessário..."
 sleep 2
-apt-get -y update & upgrade
+apt-get update & upgrade -y
 
-echo "instala todo o resto
+apt-get install git -y
+
+echo "instala todo o resto"
 apt-get install mongodb -y
 
 apt-get install curl -y
